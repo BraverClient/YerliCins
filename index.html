@@ -597,3 +597,228 @@ edited by Nils Svartholm, 367–77. Stockholm: Almquist &amp; Wiksell.
 </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Untitled</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<p>Just as the components of a vector change when we change the <a
+href="basis_(linear_algebra)" class="wikilink" title="basis">basis</a>
+of the vector space, the components of a tensor also change under such a
+transformation. Each type of tensor comes equipped with a
+<em>transformation law</em> that details how the components of the
+tensor respond to a <a href="change_of_basis" class="wikilink"
+title="change of basis">change of basis</a>. The components of a vector
+can respond in two distinct ways to a <a href="change_of_basis"
+class="wikilink" title="change of basis">change of basis</a> (see <a
+href="covariance_and_contravariance_of_vectors" class="wikilink"
+title="covariance and contravariance of vectors">covariance and
+contravariance of vectors</a>), where the new <a href="basis_vectors"
+class="wikilink" title="basis vectors">basis vectors</a> <span
+class="math inline"><strong>ê</strong><sub><em>i</em></sub></span> are
+expressed in terms of the old basis vectors <span
+class="math inline"><strong>e</strong><sub><em>j</em></sub></span>
+as,</p>
+<p><span class="math display">$$\mathbf{\hat{e}}_i = \sum_{j=1}^n
+\mathbf{e}_j R^j_i = \mathbf{e}_j R^j_i .$$</span></p>
+<p>Here <em>R</em><sup><em>j</em></sup><sub><em>i</em></sub> are the
+entries of the change of basis matrix, and in the rightmost expression
+the <a href="summation" class="wikilink" title="summation">summation</a>
+sign was suppressed: this is the <a href="Einstein_summation_convention"
+class="wikilink" title="Einstein summation convention">Einstein
+summation convention</a>, which will be used throughout this article.<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a> The components
+<em>v</em><sup><em>i</em></sup> of a column vector <strong>v</strong>
+transform with the <a href="matrix_inverse" class="wikilink"
+title="inverse">inverse</a> of the matrix <em>R</em>,</p>
+<p><span
+class="math display"><em>v̂</em><sup><em>i</em></sup> = (<em>R</em><sup>−1</sup>)<sub><em>j</em></sub><sup><em>i</em></sup><em>v</em><sup><em>j</em></sup>,</span></p>
+<p>where the hat denotes the components in the new basis. This is called
+a <em>contravariant</em> transformation law, because the vector
+components transform by the <em>inverse</em> of the change of basis. In
+contrast, the components, <em>w</em><sub><em>i</em></sub>, of a covector
+(or row vector), <strong>w</strong>, transform with the matrix
+<em>R</em> itself,</p>
+<p><span
+class="math display"><em>ŵ</em><sub><em>i</em></sub> = <em>w</em><sub><em>j</em></sub><em>R</em><sub><em>i</em></sub><sup><em>j</em></sup>.</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1">The Einstein summation convention, in brief, requires the
+sum to be taken over all values of the index whenever the same symbol
+appears as a subscript and superscript in the same term. For example,
+under this convention <span
+class="math inline"><em>B</em><sub><em>i</em></sub><em>C</em><sup><em>i</em></sup> = <em>B</em><sub>1</sub><em>C</em><sup>1</sup> + <em>B</em><sub>2</sub><em>C</em><sup>2</sup> + ⋯<em>B</em><sub><em>n</em></sub><em>C</em><sup><em>n</em></sup></span><a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li>
+</ol>
+</section>
+</body>
+</html>
